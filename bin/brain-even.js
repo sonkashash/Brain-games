@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-import greetingsUser from '../src/cli.js';
-import isEven from '../src/isEven.js';
+import brainEven from '../src/games/even.js';
 
-const nameUser = greetingsUser();
-isEven(nameUser);
+brainEven();
