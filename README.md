@@ -3,23 +3,22 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a9f2f2901ecd8f71abce/maintainability)](https://codeclimate.com/github/sonkashash/frontend-project-44/maintainability)
 
 ----------------------------------
-#### Brain even 
+## Terminal games
 
-An [example](https://asciinema.org/a/n442dYSbfv73ifudZRNW7lxAQ) of installing a package, starting a game, winning and losing a player
-
+All games includes simular structure, but different tasks
 + The game welcomes the player
 + The tasks ask you to answer 3 questions to check the parity of a number
 + In case of 3 correct answers, the game congratulates the player
 + If you answer incorrectly, the game ends
 
-#### Brain calc
+#### [Brain even](https://asciinema.org/a/n442dYSbfv73ifudZRNW7lxAQ) 
 
-An [example](https://asciinema.org/a/1DiklSFRnrEPCeIROseMu5xrC) of installing a package, starting a game, winning and losing a player
+Task: check the parity of a number
 
-+ The game welcomes the player
-+ The tasks ask you to answer 3 questions to calculate random expressions
-+ In case of 3 correct answers, the game congratulates the player
-+ If you answer incorrectly, the game ends
+
+#### [Brain calc](https://asciinema.org/a/1DiklSFRnrEPCeIROseMu5xrC)
+
+Task: calculate random expressions
 
 
 
