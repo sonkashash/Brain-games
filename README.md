@@ -11,12 +11,12 @@ All games includes simular structure, but different tasks
 + In case of 3 correct answers, the game congratulates the player
 + If you answer incorrectly, the game ends
 
-#### [Brain even](https://asciinema.org/a/n442dYSbfv73ifudZRNW7lxAQ) 
+#### 1. [Brain even](https://asciinema.org/a/n442dYSbfv73ifudZRNW7lxAQ) 
 
 Task: check the parity of a number
 
 
-#### [Brain calc](https://asciinema.org/a/1DiklSFRnrEPCeIROseMu5xrC)
+#### 2. [Brain calc](https://asciinema.org/a/1DiklSFRnrEPCeIROseMu5xrC)
 
 Task: calculate random expressions
 
