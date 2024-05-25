@@ -1,6 +1,6 @@
 import greetingsUser from '../cli.js';
 import { getTaskTitle, checkAnswer } from '../index.js';
-import { getRandomNums } from '../random.js';
+import { getRandomNums } from '../utils.js';
 
 const getTaskEven = (getRandomFunc) => getRandomFunc();
 

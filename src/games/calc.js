@@ -2,7 +2,7 @@ import _ from 'lodash';
 
 import greetingsUser from '../cli.js';
 import { getTaskTitle, checkAnswer } from '../index.js';
-import { getRandomPair } from '../random.js';
+import { getRandomPair } from '../utils.js';
 
 const getTaskCalc = (getRandomFunc) => {
   const [num1, num2] = getRandomFunc();
