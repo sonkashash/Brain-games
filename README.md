@@ -13,12 +13,18 @@ All games includes simular structure, but different tasks
 
 #### 1. [Brain even](https://asciinema.org/a/n442dYSbfv73ifudZRNW7lxAQ) 
 
-Task: check the parity of a number
+*Task*: Check the parity of a number
 
 
 #### 2. [Brain calc](https://asciinema.org/a/1DiklSFRnrEPCeIROseMu5xrC)
 
-Task: calculate random expressions
+*Task*: calculate the result of the expression
+
+
+#### 3. [Brain gcd](https://asciinema.org/a/wefNd0Z7R1XmrHtVsLEISAi94)
+
+*Task*: find the greatest common divisor of given numbers
+
 
 
 
