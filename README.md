@@ -18,12 +18,12 @@ All games includes simular structure, but different tasks
 
 #### 2. [Brain calc](https://asciinema.org/a/1DiklSFRnrEPCeIROseMu5xrC)
 
-*Task*: calculate the result of the expression
+*Task*: Calculate the result of the expression
 
 
 #### 3. [Brain gcd](https://asciinema.org/a/wefNd0Z7R1XmrHtVsLEISAi94)
 
-*Task*: find the greatest common divisor of given numbers
+*Task*: Find the greatest common divisor of given numbers
 
 
 
