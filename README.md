@@ -7,7 +7,7 @@
 
 All games includes simular structure, but different tasks
 + The game welcomes the player
-+ The tasks ask you to answer 3 questions to check the parity of a number
++ In the games you are asked to answer 3 questions. Each game has its own task
 + In case of 3 correct answers, the game congratulates the player
 + If you answer incorrectly, the game ends
 
@@ -24,6 +24,14 @@ All games includes simular structure, but different tasks
 #### 3. [Brain gcd](https://asciinema.org/a/wefNd0Z7R1XmrHtVsLEISAi94)
 
 *Task*: Find the greatest common divisor of given numbers
+
+#### 4. [Brain progression](https://asciinema.org/a/jvzqugewm4oJumYJFn6ZHcTgQ)
+
+*Task*: Write down the missing element of the progression
+
+
+
+
 
 
 

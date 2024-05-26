@@ -1,9 +1,19 @@
-const getRandomNums = () => Math.ceil(Math.random() * 100);
+import _ from 'lodash';
+
+const getRandomNums = () => Math.ceil(Math.random() * 10 * Math.random() * 10);
 
 const getRandomPair = () => {
-  const num1 = Math.ceil(Math.random() * 10) * Math.ceil(Math.random() * 10);
+  const num1 = Math.ceil(Math.random() * 10 * Math.random() * 10);
   const num2 = Math.ceil(Math.random() * 100);
   return [num1, num2];
+};
+
+const getRandomFromRange = (min, max, step) => {
+  const range = [];
+  for (let i = min; i < max; i += step) {
+    range.push(i);
+  }
+  return _.sample(range);
 };
 
 // Find the greatest common divisor of given numbers
@@ -22,4 +32,6 @@ const findGcd = (a, b) => {
   return findGcd(first - second, second);
 };
 
-export { getRandomNums, getRandomPair, findGcd };
+export {
+  getRandomNums, getRandomPair, getRandomFromRange, findGcd,
+};

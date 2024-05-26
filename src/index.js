@@ -4,9 +4,9 @@ const getTaskTitle = (taskTitle) => {
   console.log(taskTitle);
 };
 
-const checkAnswer = (name, getTaskFunc, getRandomFunc, getRightAnswerFunc) => {
+const checkAnswer = (name, getTaskFunc, getRightAnswerFunc) => {
   for (let i = 0; i < 3; i += 1) {
-    const task = getTaskFunc(getRandomFunc);
+    const task = getTaskFunc();
     const rightAnswer = getRightAnswerFunc(task);
     console.log(`Question: ${task}`);
     const userAnswer = readlineSync.question('Your answer: ');
