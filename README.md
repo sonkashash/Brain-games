@@ -46,7 +46,7 @@ All games includes simular structure, but different tasks
   brain-<name of the game>
   ```
 
-  *you can find the game names in the list below*
+  *you can find the game names in the list of games*
 
   ## Lint
 
