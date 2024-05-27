@@ -21,15 +21,18 @@ const calculateExpression = (num1, num2, operator) => {
   const operand2 = Number(num2);
 
   switch (operator) {
-    case "*":
+    case '*':
       return operand1 * operand2;
-    case "+":
+    case '+':
       return operand1 + operand2;
-    case "-":
+    case '-':
       return operand1 - operand2;
-    case "/":
-        return operand2 ? operand1 / operand2 : 'Division by 0 is prohibited';
+    case '/':
+      return operand2 ? operand1 / operand2 : 'Division by 0 is prohibited';
+    default:
+      console.log(`Your operator ${operator} is not on the list.`);
   }
+  return `Your operator ${operator} is not on the list.`;
 };
 
 // Find the greatest common divisor of given numbers
