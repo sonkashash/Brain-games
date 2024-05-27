@@ -17,22 +17,19 @@ const getRandomFromRange = (min, max, step) => {
 };
 
 const calculateExpression = (num1, num2, operator) => {
-  let res;
   const operand1 = Number(num1);
   const operand2 = Number(num2);
-  if (operator === '+') {
-    res = operand1 + operand2;
+
+  switch (operator) {
+    case "*":
+      return operand1 * operand2;
+    case "+":
+      return operand1 + operand2;
+    case "-":
+      return operand1 - operand2;
+    case "/":
+        return operand2 ? operand1 / operand2 : 'Division by 0 is prohibited';
   }
-  if (operator === '-') {
-    res = operand1 - operand2;
-  }
-  if (operator === '*') {
-    res = operand1 * operand2;
-  }
-  if (operator === '/') {
-    res = operand2 ? operand1 / operand2 : 'Division by 0 is prohibited';
-  }
-  return res;
 };
 
 // Find the greatest common divisor of given numbers
