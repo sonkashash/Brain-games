@@ -16,6 +16,25 @@ const getRandomFromRange = (min, max, step) => {
   return _.sample(range);
 };
 
+const calculateExpression = (num1, num2, operator) => {
+  let res;
+  const operand1 = Number(num1);
+  const operand2 = Number(num2);
+  if (operator === '+') {
+    res = operand1 + operand2;
+  }
+  if (operator === '-') {
+    res = operand1 - operand2;
+  }
+  if (operator === '*') {
+    res = operand1 * operand2;
+  }
+  if (operator === '/') {
+    res = operand2 ? operand1 / operand2 : 'Division by 0 is prohibited';
+  }
+  return res;
+};
+
 // Find the greatest common divisor of given numbers
 const findGcd = (a, b) => {
   if (a === 0 || b === 0) return 0;
@@ -32,6 +51,16 @@ const findGcd = (a, b) => {
   return findGcd(first - second, second);
 };
 
+const isPrime = (num) => {
+  const number = Number(num);
+  for (let i = 2; i <= Math.sqrt(number); i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
 export {
-  getRandomNums, getRandomPair, getRandomFromRange, findGcd,
+  getRandomNums, getRandomPair, getRandomFromRange, calculateExpression, findGcd, isPrime,
 };

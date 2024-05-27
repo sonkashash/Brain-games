@@ -2,7 +2,7 @@ import _ from 'lodash';
 
 import greetingsUser from '../cli.js';
 import { getTaskTitle, checkAnswer } from '../index.js';
-import { getRandomPair } from '../utils.js';
+import { getRandomPair, calculateExpression } from '../utils.js';
 
 const getTaskCalc = () => {
   const [num1, num2] = getRandomPair();
@@ -22,18 +22,7 @@ const getTaskCalc = () => {
 
 const getRightAnswerCalc = (task) => {
   const [num1, operator, num2] = task.split(' ');
-  const operand1 = Number(num1);
-  const operand2 = Number(num2);
-  if (operator === '+') {
-    return operand1 + operand2;
-  }
-  if (operator === '-') {
-    return operand1 - operand2;
-  }
-  if (operator === '*') {
-    return operand1 * operand2;
-  }
-  return 0;
+  return calculateExpression(num1, num2, operator);
 };
 
 const brainCalc = () => {

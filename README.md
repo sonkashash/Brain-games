@@ -29,6 +29,11 @@ All games includes simular structure, but different tasks
 
 *Task*: Write down the missing element of the progression
 
+#### 5. [Brain prime](https://asciinema.org/a/mIw6WLaeG37zgcYip5NjQmvqj)
+
+*Task*: Check that a number is prime
+
+
 
 
 
