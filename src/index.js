@@ -1,14 +1,15 @@
 import readlineSync from 'readline-sync';
 
-const getTaskTitle = (taskTitle) => {
-  console.log(taskTitle);
-};
+import greetingsUser from './cli.js';
 
-const checkAnswer = (name, getTaskFunc, getRightAnswerFunc) => {
-  for (let i = 0; i < 3; i += 1) {
-    const task = getTaskFunc();
-    const rightAnswer = getRightAnswerFunc(task);
-    console.log(`Question: ${task}`);
+const checkAnswer = (taskTitle, getTaskFunc) => {
+  const name = greetingsUser();
+  const iterationsCount = 3;
+
+  console.log(taskTitle);
+
+  for (let i = 0; i < iterationsCount; i += 1) {
+    const rightAnswer = getTaskFunc();
     const userAnswer = readlineSync.question('Your answer: ');
     if (rightAnswer.toString() === userAnswer) {
       console.log('Correct!');
@@ -22,4 +23,4 @@ const checkAnswer = (name, getTaskFunc, getRightAnswerFunc) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-export { getTaskTitle, checkAnswer };
+export default checkAnswer;

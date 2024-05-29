@@ -16,6 +16,13 @@ const getRandomFromRange = (min, max, step) => {
   return _.sample(range);
 };
 
+const isEven = (num) => {
+  if (num % 2 === 0) {
+    return true;
+  }
+  return false;
+};
+
 const calculateExpression = (num1, num2, operator) => {
   const operand1 = Number(num1);
   const operand2 = Number(num2);
@@ -64,5 +71,11 @@ const isPrime = (num) => {
 };
 
 export {
-  getRandomNums, getRandomPair, getRandomFromRange, calculateExpression, findGcd, isPrime,
+  getRandomNums,
+  getRandomPair,
+  getRandomFromRange,
+  isEven,
+  calculateExpression,
+  findGcd,
+  isPrime,
 };
