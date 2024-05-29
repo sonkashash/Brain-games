@@ -70,6 +70,12 @@ const isPrime = (num) => {
   return true;
 };
 
+const checkProperty = (someFunc) => {
+  const number = getRandomNums();
+  console.log(`Question: ${number}`);
+  return someFunc(number) ? 'yes' : 'no';
+};
+
 export {
   getRandomNums,
   getRandomPair,
@@ -78,4 +84,5 @@ export {
   calculateExpression,
   findGcd,
   isPrime,
+  checkProperty,
 };
