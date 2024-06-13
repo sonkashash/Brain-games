@@ -7,11 +7,4 @@ const greetingsUser = () => {
   return nameUser;
 };
 
-// const checkGame = () => {
-//   const nameGame = readlineSync.question('hexlet:brain-games $ ');
-//   if (nameGame === 'brain-games') {
-//     greetingsUser();
-//   }
-// };
-
 export default greetingsUser;

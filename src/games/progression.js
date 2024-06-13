@@ -1,13 +1,13 @@
 import checkAnswer from '../index.js';
-import { getRandomNums, getRandomFromRange } from '../utils.js';
+import { generateRandomNums, generateProgression } from '../utils.js';
 
 const getTaskProgression = () => {
   const progressionArr = [];
-  const firstEl = getRandomNums();
-  const stepProgression = getRandomNums();
+  const firstEl = generateRandomNums();
+  const stepProgression = generateRandomNums();
   const lengthProgression = 10;
   const lastEl = firstEl + lengthProgression * stepProgression;
-  const hideEl = getRandomFromRange(firstEl, lastEl, stepProgression);
+  const hideEl = generateProgression(firstEl, lastEl, stepProgression);
 
   for (let i = firstEl; i < lastEl; i += stepProgression) {
     if (i === hideEl) {

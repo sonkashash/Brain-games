@@ -1,14 +1,14 @@
 import _ from 'lodash';
 
-const getRandomNums = () => Math.ceil(Math.random() * 10 * Math.random() * 10);
+export const generateRandomNums = () => Math.ceil(Math.random() * 10 * Math.random() * 10);
 
-const getRandomPair = () => {
+export const getRandomPair = () => {
   const num1 = Math.ceil(Math.random() * 10 * Math.random() * 10);
   const num2 = Math.ceil(Math.random() * 100);
   return [num1, num2];
 };
 
-const getRandomFromRange = (min, max, step) => {
+export const generateProgression = (min, max, step) => {
   const range = [];
   for (let i = min; i < max; i += step) {
     range.push(i);
@@ -23,7 +23,7 @@ const isEven = (num) => {
   return false;
 };
 
-const calculateExpression = (num1, num2, operator) => {
+export const calculateExpression = (num1, num2, operator) => {
   const operand1 = Number(num1);
   const operand2 = Number(num2);
 
@@ -43,7 +43,7 @@ const calculateExpression = (num1, num2, operator) => {
 };
 
 // Find the greatest common divisor of given numbers
-const findGcd = (a, b) => {
+export const findGcd = (a, b) => {
   if (a === 0 || b === 0) return 0;
   let first = Math.abs(a);
   let second = Math.abs(b);
@@ -58,7 +58,7 @@ const findGcd = (a, b) => {
   return findGcd(first - second, second);
 };
 
-const isPrime = (num) => {
+export const isPrime = (num) => {
   const number = Number(num);
 
   if (number <= 1) return false;
@@ -70,19 +70,9 @@ const isPrime = (num) => {
   return true;
 };
 
-const checkProperty = (someFunc) => {
-  const number = getRandomNums();
+export const checkProperty = (someFunc) => {
+  const number = generateRandomNums();
   console.log(`Question: ${number}`);
   return someFunc(number) ? 'yes' : 'no';
 };
 
-export {
-  getRandomNums,
-  getRandomPair,
-  getRandomFromRange,
-  isEven,
-  calculateExpression,
-  findGcd,
-  isPrime,
-  checkProperty,
-};
