@@ -16,7 +16,7 @@ export const generateProgression = (min, max, step) => {
   return _.sample(range);
 };
 
-const isEven = (num) => {
+export const isEven = (num) => {
   if (num % 2 === 0) {
     return true;
   }
@@ -75,4 +75,3 @@ export const checkProperty = (someFunc) => {
   console.log(`Question: ${number}`);
   return someFunc(number) ? 'yes' : 'no';
 };
-
